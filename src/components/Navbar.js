@@ -25,7 +25,7 @@ const Navbar = (props) => {
         <nav >
             <ul className='text-richblack-100 flex gap-x-6'>
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/home">Home</NavLink>
                 </li>
 
                 <li>

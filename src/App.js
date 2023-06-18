@@ -17,7 +17,8 @@ function App() {
     <Navbar loginStatus={isLoggedIn} setloginStatus={setisLoggedIn}/>
 
     <Routes>
-       <Route path="/" element={<Home/>}></Route>
+       <Route path="/" element={<Login setloginStatus={setisLoggedIn}/>}></Route>
+       <Route path="/home" element={<Home/>}/>
        <Route path="/login" element={<Login setloginStatus={setisLoggedIn}/>}></Route>
        <Route path="/signup" element={<Signup setloginStatus={setisLoggedIn}/>}></Route>
        <Route path="/dashboard" element={<PrivateRoute isLoggedIn={isLoggedIn}><Dashboard/></PrivateRoute>}></Route>
